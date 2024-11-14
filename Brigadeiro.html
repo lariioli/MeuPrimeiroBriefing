@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTAIN DOCES</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Brigadeiro.css">
+</head>
+<body>
+
+    <header class="text-center py-5">
+        <h1>Montain Doces</h1>
+        <p>DOCES INCRÍVEIS, SÓ AQUI!</p>
+        <img src="Inserir um subtítulo (7).png" alt="Logo" style="height: 50%; width: 50%;">
+    </header>
+
+    <nav class="navbar navbar-expand-lg " id="nav-bar-cor">
+        <div class="container">
+            
+            <!-- Botão de toggle (para dispositivos móveis) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links da barra de navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle"></i> Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-box-seam"></i> Produtos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-rolodex"></i> Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Produto 1: Palha Italiana -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/R.b97134b5b65ececc0bd8ab4a6f8b2234?rik=6B3YRz6pbVeZAg&pid=ImgRaw&r=0" sty class="card-img-top" alt="Palha Italiana">
+                        <div class="card-body">
+                            <h5 class="card-title">Palha Italiana</h5>
+                            <p class="card-text">Palha italiana irresistível, com o sabor perfeito para adoçar qualquer momento!</p>
+                            <p class="price">R$ 9,50</p>
+                            <button type="button" class="btn btn-primary"  data-bs-target="#carrinho">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2: Bolo de Limão -->
+                <div class="col-12 col-md-3 mb-3 g-5 ">
+                    <div class="card">
+                        <img src="https://th.bing.com/th?id=OSK.1f6990cd6fcee0426c9ece4255dafb88" class="card-img-top" alt="Bolo de Limão">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo de Limão</h5>
+                            <p class="card-text">Irresistível bolo de limão, com o sabor perfeito para adoçar qualquer hora!</p>
+                            <p class="price">R$ 21,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3: Pudim -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.7ZEvFi3lV4Lan90tGwpFdAHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="Pudim">
+                        <div class="card-body">
+                            <h5 class="card-title">Pudim</h5>
+                            <p class="card-text">Pudim cremoso e irresistível, com aquele sabor doce que derrete na boca!</p>
+                            <p class="price">R$ 6,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4: Banoffee -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.wR5lvd4r2WMY3m_UuhIXXAHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Banoffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Banoffee</h5>
+                            <p class="card-text">Banoffee irresistível, com camadas de doce de leite, banana e creme!</p>
+                            <p class="price">R$ 14,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+               
+        
+                        <!-- Produto 5: Banoffee -->
+                        <div class="col-12 col-md-3 mb-3 g-5">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.wR5lvd4r2WMY3m_UuhIXXAHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Banoffee">
+                                <div class="card-body">
+                                    <h5 class="card-title">Banoffee</h5>
+                                    <p class="card-text">Banoffee irresistível, com camadas de doce de leite, banana e creme!</p>
+                                    <p class="price">R$ 14,99</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                                    <button type="button" class="btn btn-danger">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                <!-- Produto 6: Bolo de Cenoura -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.P3A2THCJAtvJYuTC2Cg7fAHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Bolo de Cenoura">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo de Cenoura</h5>
+                            <p class="card-text">Bolo de cenoura fofinho e aromático, coberto com uma calda de chocolate!</p>
+                            <p class="price">R$ 24,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 7: Bolo de Churros -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://bing.com/th?id=OSK.60a6cab08b1f3f9bb448c85b7ac9630d" class="card-img-top" alt="Bolo de Churros">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo de Churros</h5>
+                            <p class="card-text">Bolo de churros quentinho, sabor doce e crocante, recheado de prazer!</p>
+                            <p class="price">R$ 34,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 8: Bolo no Pote -->
+                <div class="col-12 col-md-3 mb-3 g-5">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.-ctTbG3kGQmLY83K_JshMgHaF7?rs=1&pid=ImgDetMain" class="card-img-top" alt="Bolo no Pote">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo no Pote</h5>
+                            <p class="card-text">Bolo no pote delicioso, para levar para qualquer lugar e se deliciar a qualquer hora!</p>
+                            <p class="price">R$ 10,99</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                            <button type="button" class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-4">
+                    <div class="row">
+                        <!-- Produto 9: Maria-mole  -->
+                        <div class="col-12 col-md-3 mb-3 g-5">
+                            <div class="card">
+                                <img src="https://jadoces.com.br/wp-content/uploads/2023/08/doce-maria-mole.webp" sty class="card-img-top" alt="Palha Italiana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maria mole</h5>
+                                    <p class="card-text">Maria-mole macia e doce, coberta com coco ralado, perfeita para qualquer ocasião!</p>
+                                    <p class="price">R$ 5,50</p>
+                                    <button type="button" class="btn btn-primary"  data-bs-target="#carrinho">Adicionar ao Carrinho</button>
+                                    <button type="button" class="btn btn-danger">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Produto 10: Beijinho -->
+                        <div class="col-12 col-md-3 mb-3 g-5 ">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQjVSnwCpr4seEai1I2QnGQPlrMrnT6a1YA&s" class="card-img-top" alt="Bolo de Limão">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beijinho </h5>
+                                    <p class="card-text">Beijinho macio e doce, com coco ralado e um toque de leite condensado!</p>
+                                    <p class="price">R$ 4,99</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                                    <button type="button" class="btn btn-danger">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Produto 11: Donuts -->
+                        <div class="col-12 col-md-3 mb-3 g-5">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx1KfQFkW0UwUjJpyrTW7OgARmFCbkwT3wFg&s" class="card-img-top" alt="Pudim">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pudim</h5>
+                                    <p class="card-text">Donut fresquinho e macio, coberto com glacê e recheado de doce de leite!</p>
+                                    <p class="price">R$ 7,50</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                                    <button type="button" class="btn btn-danger">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Produto 12: Cone Trufado-->
+                        <div class="col-12 col-md-3 mb-3 g-5">
+                            <div class="card">
+                                <img src="https://images.festejante.com.br/uploads/shop/4b09cfa9-1681-403d-81e6-35b8b00f41b9/products/5530/2902e66a-c33e-4104-97ce-ebe3807b5c04.jpg" class="card-img-top" alt="Banoffee">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cone Trufado</h5>
+                                    <p class="card-text">Cone trufado recheado com chocolate cremoso e coberto com granulado!</p>
+                                    <p class="price">R$ 11,99</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+                                    <button type="button" class="btn btn-danger">Comprar</button>
+                                </div>
+                            </div>
+                        </div>                   
+        
+            </div>
+        </div>
+        <div class="modal fade" id="carrinho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Obrigado!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Produto adicionado ao carrinho com sucesso!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0sH2bKpxnsq05X50GfdlZp0dd4/8ctfPyl+U0Vft9dLf2byh" crossorigin="anonymous"></script>
+</body>
+</html>

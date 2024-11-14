@@ -1,0 +1,223 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* Resetando margens e padding do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #f26b7d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+/* Estilo do menu de navegação */
+/* Estilo da barra de navegação */
+#nav-bar-cor {
+    background-color: #f26b7d; /* Cor de fundo */
+}
+
+/* Container dentro do navbar (para centralizar o conteúdo) */
+.navbar .container {
+    display: flex;
+    justify-content: space-between; /* Isso garante que o logo e os links tenham espaçamento */
+    align-items: center;
+}
+
+/* Estilos para os links de navegação */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    width: 100%;
+}
+
+/* Estilo de cada item de navegação */
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.nav-link,.nav-item {
+    color:white  !important; /* Garantir que os links fiquem brancos */
+    font-size: 1.2em;
+    
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+/* Efeito de hover nos links */
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o botão de toggle (quando em telas pequenas) */
+.navbar-toggler {
+    border-color: #f26b7d;
+}
+
+/* Alterando a cor do ícone de toggle */
+.navbar-toggler-icon {
+    background-color: white; /* Ícone branco para contraste */
+}
+
+/* Para garantir que os itens da navegação sejam responsivos e fiquem bem organizados em dispositivos móveis */
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center; /* Alinha os itens verticalmente em dispositivos móveis */
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 10px 0; /* Aumenta o espaçamento entre os itens no modo mobile */
+    }
+}
+
+/* Estilo da seção de produtos */
+section.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo de cada produto */
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    color: #f26b7d;
+}
+
+.product p {
+    color: #555;
+}
+
+.product .price {
+    font-size: 1.3em;
+    color: #ff6347;
+}
+
+/* Estilo do formulário de contato */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos do formulário */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão de envio */
+.contact-form button {
+    background-color: #f26b7d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact-form button:hover {
+    background-color: #ff91a4;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #f26b7d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+/* Ajuste das imagens dentro dos cards */
+/* Estilo para a imagem */
+.card-img-top {
+    width: 100%; /* Deixe a largura 100% para que a imagem ocupe todo o espaço disponível */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Faz a imagem se ajustar ao espaço sem distorção */
+    object-position: center; /* Centraliza a imagem no card */
+}
+
+/* Estilo adicional para o corpo do card */
+.card-body {
+    text-align: center; /* Centraliza o conteúdo do texto dentro do card */
+    padding: 1.5rem; /* Adiciona um pouco mais de espaçamento interno */
+}
+
+/* Estilo para o preço */
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do preço */
+}
+
+/* Estilo para os botões dentro do card */
+.card-body .btn {
+    margin-top: 10px; /* Adiciona um pequeno espaçamento acima dos botões */
+    width: 100%; /* Faz com que os botões ocupem toda a largura do card */
+    padding: 12px; /* Aumenta o tamanho do botão */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte no botão */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.card-body .btn:hover {
+    background-color: #ff5722; /* Altera a cor do fundo ao passar o mouse (cor de destaque) */
+}
+
+/* Estilo para o botão "Adicionar ao Carrinho" */
+.card-body .btn-primary {
+    background-color: #007bff; /* Cor azul para o botão de "Adicionar" */
+    border-color: #007bff;
+}
+
+/* Estilo para o botão "Comprar" */
+.card-body .btn-danger {
+    background-color: #dc3545; /* Cor vermelha para o botão de "Comprar" */
+    border-color: #dc3545;
+}
+
+    
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+#nav-bar-cor{
+    background-color: #f26b7d;
+}
